@@ -17,13 +17,10 @@ def partition(arr, left, right):
                 return position
 
             if arr[position] > arr[right]: #변경해야하는 타이밍
-
                 swap(arr, position, right)
-
                 compare = 1 # descending order change
                 position = right
                 left = left + 1
-
 
             else :
                 right = right-1
@@ -33,9 +30,7 @@ def partition(arr, left, right):
                 return left
 
             if arr[position] < arr[left]: #변경해야하는 타이밍
-
                 swap(arr, position, left)
-
                 compare = 0 # asecnding order change
                 position = left
                 right= right- 1
