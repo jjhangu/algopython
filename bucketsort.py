@@ -2,17 +2,20 @@ arr = [0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434]
 def bucketSort(arr, size):
     buckets = [[] for i in range(size)]
 
-    # 버킷에 담는다
+    # put arr in bucket
+
     for i in range(len(arr)):
         num = size*arr[i]
         buckets[int(num)].append(arr[i])
 
     output = []
-    # sort 한다
+    # use insertion sort
+
     for i in range(len(buckets)):
         insertionSort(buckets[i])
 
-    # buckets 를 더하고 출력한다
+    # concat all data
+
     for i in range(len(buckets)):
         while len(buckets[i]) > 0:
             output.append(buckets[i].pop(0))
