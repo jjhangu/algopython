@@ -31,5 +31,3 @@ def countSort(arr):
     print(output)
 
 countSort(arr)
-
-
