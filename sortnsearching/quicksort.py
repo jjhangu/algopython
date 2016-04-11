@@ -1,4 +1,7 @@
+# http://interactivepython.org/runestone/static/pythonds/SortSearch/TheQuickSort.html
+
 arr = [5, 2, 6, 1, 3, 4]
+
 
 def swap(arr, i, j):
     temp = arr[i]
