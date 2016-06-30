@@ -1,3 +1,5 @@
+from primesieve import *
+
 coins = [1, 2, 5, 10, 20, 50, 100, 500, 1000]
 
 def find(coins, target):
@@ -13,4 +15,10 @@ def find(coins, target):
 
 list = find(coins, 93 )
 print(list)
+
+list = generate_primes(10**10)
+
+print(len(list))
+print(list[1000000])
+
 
